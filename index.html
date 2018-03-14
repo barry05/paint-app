@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+    	<title>Paint</title>
+  </head>
+  <body onload="loaded()">
+	<section>
+	<div id ="drawingTools">
+		<div id = "colors">
+			<button id = "black" onclick="init()"></button>
+			<button id = "blue" onclick="changeColor('blue')"></button>
+			<button id = "green" onclick="initLine()"></button>
+			<button id = "red" onclick="changeColor('red')"></button>
+			<button id = "yellow" onclick="changeColor('yellow')"></button>
+		</div>
+	
+		<div id = "otherTools">
+			<button id="clearCanvas" onclick="clearCanvas()">Clear</button>
+		</div>
+		
+		<div id = "increments">
+			<button id = "sizeminus" onclick="decStroke()">-</button> 
+			<span id="myHperlink"></span>
+			<button id = "sizeplus" onclick="incStroke()">+</button> 
+		</div>
+		<canvas id="canvas" width="800" height="500"></canvas>
+	</section>
+			
+	
+	<script src="script.js"></script>
+	
+  </body>
+</html>
